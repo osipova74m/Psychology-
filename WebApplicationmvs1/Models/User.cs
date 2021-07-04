@@ -7,11 +7,13 @@ namespace WebApplicationmvs1.Models
 {
     public class User
     {
-        public int UserId { get; set; }
-        public int UserName { get; set; }
-        public int UserSecondName { get; set; }
-        public DateTime UserDate { get; set; }
-        public int UserPhone { get; set; }
-        public string UserEmail { get; set; }
+        public Guid Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime Registred { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+
+        public ICollection<Consult> Consultations { get; set; }
     }
 }
