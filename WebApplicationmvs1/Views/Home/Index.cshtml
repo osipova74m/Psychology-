@@ -8,6 +8,14 @@
     <h2>Новая статья</h2>
 </div>
 
+@foreach (var post in Model)
+{
+    <div>@post.Id, @post.Name</div>
+}
+
+
+
+
 <div class="row">
     <div class="col-md-4">
         <h2>Welcome</h2>
@@ -18,12 +26,12 @@
     </div>
     <div class="col-md-4">
         <h2>Build it </h2>
-        <p>that makes it easy to add</p>
+        <p>easy to add</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2> Download it </h2>
-        <p>You can easily find  price for your applications.</p>
+        <p>..........</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>

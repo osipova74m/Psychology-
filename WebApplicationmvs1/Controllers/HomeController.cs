@@ -27,9 +27,9 @@ namespace WebApplicationmvs1.Controllers
             //  2 способ
              List<PostText> model = new List<PostText>();
              //Add parts to the list.
-             model.Add(new PostText() { Body = "arm1", Name = "First", Id = Guid.NewGuid() });
-             model.Add(new PostText() { Body = "arm2", Name = "Second", Id = Guid.NewGuid() });
-             model.Add(new PostText() { Body = "arm3", Name = "Fird", Id = Guid.NewGuid() });
+             model.Add(new PostText() { Body = "arm1", Name = "  First", Id = Guid.NewGuid() });
+             model.Add(new PostText() { Body = "arm2", Name = "   Second", Id = Guid.NewGuid() });
+             model.Add(new PostText() { Body = "arm3", Name = "   Third", Id = Guid.NewGuid() });
 
              return View(model);
 
